@@ -8,79 +8,142 @@
 <style>
 
 body{
-font-family: Arial;
-margin:0;
-background:#f5f1e6;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#f8f8f5;
 }
 
 header{
-background:#2e7d32;
-color:white;
-padding:25px;
-text-align:center;
+    background:#006633;
+    color:white;
+    padding:25px 40px;
 }
 
+/* Header layout */
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.header-logo{
+    flex:0 0 140px;
+    text-align:center;
+}
+
+.header-logo img{
+    max-width:110px;
+    height:auto;
+}
+
+.header-text{
+    flex:1;
+    text-align:center;
+}
+
+.header-text h1{
+    margin:0;
+    font-size:2.3em;
+    color:white;
+}
+
+.header-text h2{
+    margin:10px 0;
+    color:#FFD54F;
+    font-weight:normal;
+}
+
+.header-text p{
+    margin:8px 0;
+    font-size:1.05em;
+}
+
+.header-text a{
+    color:#FFD54F;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.header-text a:hover{
+    text-decoration:underline;
+}
+
+/* Navigation */
+
 nav{
-background:#4caf50;
-padding:12px;
-text-align:center;
+    background:#004d26;
+    padding:12px;
+    text-align:center;
 }
 
 nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
-font-size:16px;
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:16px;
 }
 
+nav a:hover{
+    color:#FFD54F;
+}
+
+/* Main sections */
+
 section{
-padding:40px;
-background:#fffdf6;
-margin:20px;
-border-radius:8px;
+    padding:40px;
+    background:#fffdf6;
+    margin:20px;
+    border-radius:8px;
 }
 
 h2{
-color:#2e7d32;
+    color:#006633;
 }
 
-footer{
-background:#2e7d32;
-color:white;
-text-align:center;
-padding:15px;
-}
+/* Tables */
 
 table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
 
 th, td{
-border:1px solid #ddd;
-padding:10px;
-text-align:left;
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
 }
 
 th{
-background:#4caf50;
-color:white;
+    background:#006633;
+    color:white;
 }
 
+/* Footer */
+
+footer{
+    background:#006633;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Logos */
+
 .logos{
-display:flex;
-flex-wrap:wrap;
-gap:30px;
-justify-content:center;
-margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    margin-top:20px;
 }
 
 .logos img{
-height:70px;
+    height:70px;
 }
-
 
 </style>
 
@@ -90,13 +153,41 @@ height:70px;
 
 <header>
 
-<h1>CIMPA School</h1>
+<div class="header-container">
 
-<h2>Algebraic and Enumerative Combinatorics</h2>
+<div class="header-logo">
+<a href="https://mak.ac.ug/" target="_blank">
+<img src="images/mak-logo.jpeg" alt="Makerere University Logo">
+</a>
+</div>
 
-<p><b>July 19, 2027 – July 30, 2027</b></p>
+<div class="header-text">
+
+<h1>Algebraic and Enumerative Combinatorics</h1>
+
+<h2>A CIMPA Research School</h2>
+
+<p><b>July 19–30, 2027</b></p>
 
 <p>Makerere University, Kampala, Uganda</p>
+
+<p>
+Hosted by the Department of Mathematics,
+<a href="https://cns.mak.ac.ug/" target="_blank">
+College of Natural Sciences
+</a>,
+Makerere University
+</p>
+
+</div>
+
+<div class="header-logo">
+<a href="https://www.cimpa.info/en" target="_blank">
+<img src="images/cimpa-logo.jpeg" alt="CIMPA Logo">
+</a>
+</div>
+
+</div>
 
 </header>
 
